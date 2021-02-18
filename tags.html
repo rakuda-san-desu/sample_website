@@ -3,14 +3,16 @@
   <head>
     <title>HTMLタグ一覧</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
-    <div>
+    <div id="main-nav" class="nav-menu">
       <a href="index.html">homeページ</a>
-      <a href="tags.html">HTMLタグ一覧</a>
-      <a href="moby_dick.html">読書案内『Moby Dick』</a>
+      <a href="tags.html" class="nav-spacing">HTMLタグ一覧</a>
+      <a href="moby_dick.html" class="nav-spacing">読書案内『Moby Dick』</a>
     </div>
+
 
     <h1>重要なHTMLタグ一覧</h1>
 
@@ -35,54 +37,69 @@
         <th>目的</th>
       </tr>
       <tr>
-        <td><code>h1</code>&ndash;<code>h6</code></td>
-        <td>見出し（heading）</td>
-        <td>この中に見出しを置く（レベル: 1&ndash;6）</td>
+        <td class="td-style"><code>h1</code>&ndash;<code>h6</code></td>
+        <td class="td-style">見出し（heading）</td>
+        <td class="td-style">この中に見出しを置く（レベル: 1&ndash;6）</td>
       </tr>
       <tr>
-        <td><code>p</code></td>
-        <td>段落（パラグラフ: paragraph）</td>
-        <td>include a paragraph of text</td>
+        <td class="td-style"><code>p</code></td>
+        <td class="td-style">段落（パラグラフ: paragraph）</td>
+        <td class="td-style">include a paragraph of text</td>
       </tr>
       <tr>
-        <td><code>table</code></td>
-        <td>表（テーブル: table）</td>
-        <td>この中にテーブルを置く</td>
+        <td class="td-style"><code>table</code></td>
+        <td class="td-style">表（テーブル: table）</td>
+        <td class="td-style">この中にテーブルを置く</td>
       </tr>
       <tr>
-        <td><code>tr</code></td>
-        <td>表の行（table row）</td>
-        <td>この中に行データを置く</td>
+        <td class="td-style"><code>tr</code></td>
+        <td class="td-style">表の行（table row）</td>
+        <td class="td-style">この中に行データを置く</td>
       </tr>
       <tr>
-        <td><code>th</code></td>
-        <td>表の見出し（table header）</td>
-        <td>この中に表の見出しを置く</td>
+        <td class="td-style"><code>th</code></td>
+        <td class="td-style">表の見出し（table header）</td>
+        <td class="td-style">この中に表の見出しを置く</td>
       </tr>
       <tr>
-        <td><code>td</code></td>
-        <td>表のデータ（table data）</td>
-        <td>この中に表のセルデータを置く</td>
+        <td class="td-style"><code>td</code></td>
+        <td class="td-style">表のデータ（table data）</td>
+        <td class="td-style">この中に表のセルデータを置く</td>
       </tr>
       <tr>
-        <td><code>header</code></td>
-        <td>ヘッダ（header）</td>
-        <td>目次やナビゲーションなのどのセクション</td>
+        <td class="td-style"><code>header</code></td>
+        <td class="td-style">ヘッダ（header）</td>
+        <td class="td-style">目次やナビゲーションなのどのセクション</td>
       </tr>
       <tr>
-        <td><code>div</code></td>
-        <td>仕切り（division）</td>
-        <td>汎用的なページの区切り</td>
+        <td class="td-style"><code>div</code></td>
+        <td class="td-style">仕切り（division）</td>
+        <td class="td-style">汎用的なページの区切り</td>
       </tr>
       <tr>
-        <td><code>ol</code></td>
-        <td>順序のあるリスト（ordered list）</td>
-        <td>この中に順序のあるリストを置く</td>
+        <td class="td-style"><code>ol</code></td>
+        <td class="td-style">順序のあるリスト（ordered list）</td>
+        <td class="td-style">この中に順序のあるリストを置く</td>
       </tr>
       <tr>
-        <td><code>ul</code></td>
-        <td>順不同のリスト（unordered list）</td>
-        <td>この中に順不同のリストを置く</td>
+        <td class="td-style"><code>ul</code></td>
+        <td class="td-style">順不同のリスト（unordered list）</td>
+        <td class="td-style">この中に順不同のリストを置く</td>
+      </tr>
+      <tr>
+        <td class="td-style"><code>li</code></td>
+        <td class="td-style">リスト（list item）</td>
+        <td class="td-style">リストの項目を記述</td>
+      </tr>
+      <tr>
+        <td class="td-style"><code>blockquote</code></td>
+        <td class="td-style">ブロッククォート（block quotation）</td>
+        <td class="td-style">リストの項目を記述</td>
+      </tr>
+      <tr>
+        <td class="td-style"><code>br</code></td>
+        <td class="td-style">改行（break）</td>
+        <td class="td-style">改行</td>
       </tr>
     </table>
 
@@ -97,57 +114,93 @@
         <th>画面上の表示結果</th>
       </tr>
       <tr>
-        <td><code>em</code></td>
-        <td>軽い強調（emphasized）</td>
-        <td>テキストを軽く強調する</td>
-        <td><code>技術の成熟（&lt;em&gt;technical sophistication&lt;/em&gt;）</code></td>
-        <td>技術の成熟（<em>technical sophistication</em>）</td>
+        <td class="td-style"><code>em</code></td>
+        <td class="td-style">軽い強調（emphasized）</td>
+        <td class="td-style">テキストを軽く強調する</td>
+        <td class="td-style"><code>技術の成熟（&lt;em&gt;technical sophistication&lt;/em&gt;）</code></td>
+        <td class="td-style">技術の成熟（<em>technical sophistication</em>）</td>
       </tr>
       <tr>
-        <td><code>strong</code></td>
-        <td>強調（strong）</td>
-        <td>テキストを強調する</td>
-        <td>
+        <td class="td-style"><code>strong</code></td>
+        <td class="td-style">強調（strong）</td>
+        <td class="td-style">テキストを強調する</td>
+        <td class="td-style">
           <code>&lt;strong&gt;少なくとも10億人&lt;/strong&gt;</code>
         </td>
-        <td><strong>少なくとも10億人</strong></td>
+        <td class="td-style"><strong>少なくとも10億人</strong></td>
       </tr>
       <tr>
-        <td><code>a</code></td>
-        <td>アンカー（anchor）</td>
-        <td>ハイパーリンクにする</td>
-        <td>
+        <td class="td-style"><code>a</code></td>
+        <td class="td-style">アンカー（anchor）</td>
+        <td class="td-style">ハイパーリンクにする</td>
+        <td class="td-style">
           <code>
             &lt;a href="https://learnenough.com/"&gt;Learn Enough&lt;/a&gt;
           </code>
         </td>
-        <td><a href="https://learnenough.com/">Learn Enough</a></td>
+        <td class="td-style"><a href="https://learnenough.com/">Learn Enough</a></td>
       </tr>
       <tr>
-        <td><code>img</code></td>
-        <td>画像（image）</td>
-        <td>画像を配置する</td>
-        <td>
+        <td class="td-style"><code>img</code></td>
+        <td class="td-style">画像（image）</td>
+        <td class="td-style">画像を配置する</td>
+        <td class="td-style">
           <code>
             &lt;img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"&gt;
           </code>
         </td>
-        <td><img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"></td>
+        <td class="td-style"><img src="https://bit.ly/1MZAFuQ" alt="Michael Hartl"></td>
       </tr>
       <tr>
-        <td><code>span</code></td>
-        <td>スパン（span）</td>
-        <td>範囲を定義（他の属性と組み合わせて装飾などで使われることが多い）</td>
-        <td>
+        <td class="td-style"><code>span</code></td>
+        <td class="td-style">スパン（span）</td>
+        <td class="td-style">範囲を定義（他の属性と組み合わせて装飾などで使われることが多い）</td>
+        <td class="td-style">
           <code>&lt;span&gt;イシュマエルと呼んでくれ。&lt;/span&gt;</code>
         </td>
-        <td><span>イシュマエルと呼んでくれ。</span></td>
+        <td class="td-style"><span>イシュマエルと呼んでくれ。</span></td>
       </tr>
       <tr>
-        <td><code>li</code></td>
-        <td>リスト（list item）</td>
-        <td>リストの項目を記述</td>
-        <td><li>何章も費やして捕鯨の様子を生き生きと描写している。</li></td>
+        <td class="td-style"><code>code</code></td>
+        <td class="td-style">コード（code）</td>
+        <td class="td-style">ソースコードとして定義する</td>
+        <td class="td-style"><code>table</code></td>
+        <td class="td-style">tabele</td>
+      </tr>
+    </table>
+
+    <h2>ドキュメントタグ</h2>
+
+    <table>
+      <tr>
+        <td class="td-style">HTMLタグ</td>
+        <td class="td-style" >タグ名</td>
+        <td class="td-style">目的</td>
+      </tr>
+      <tr>
+        <td class="td-style">HTML</td>
+        <td class="td-style"> HTML</td>
+        <td class="td-style">HTML文書であることを宣言する</td>
+      </tr>
+      <tr>
+        <td class="td-style" >head</td>
+        <td class="td-style">ヘッダ（head）</td>
+        <td class="td-style">この中に文書に関する情報を置く</td>
+      </tr>
+      <tr>
+        <td class="td-style">body</td>
+        <td class="td-style">本文（body）</td>
+        <td class="td-style">この中に本文を置く</td>
+      </tr>
+      <tr>
+        <td class="td-style">title</td>
+        <td class="td-style">タイトル（title）</td>
+        <td class="td-style">ページのタイトルを表す</td>
+      </tr>
+      <tr>
+        <td class="td-style">meta</td>
+        <td class="td-style" >メタ（meta tag）</td>
+        <td class="td-style">文書に関する、特定のタグがない様々な情報を指定する</td>
       </tr>
     </table>
 
